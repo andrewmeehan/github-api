@@ -1,0 +1,6 @@
+curl -X GET -u andrewmeehan:c5aadc41318adb01362f4ceb9ae890789a69cb26 https://api.github.com/repos/torvalds/linux/forks | findstr -w html_url
+curl -X GET -u andrewmeehan:c5aadc41318adb01362f4ceb9ae890789a69cb26 https://api.github.com/repos/torvalds/linux/collaborators | findstr -w login
+curl -X GET -u andrewmeehan:c5aadc41318adb01362f4ceb9ae890789a69cb26 https://api.github.com/repos/user/orgs | findstr -w login
+curl -X GET -u andrewmeehan:c5aadc41318adb01362f4ceb9ae890789a69cb26 https://api.github.com/repos/torvalds/linux/branches | findstr -w name
+curl -X GET -u andrewmeehan:c5aadc41318adb01362f4ceb9ae890789a69cb26 https://api.github.com/repos/torvalds/linux/pulls?state=open | findstr -w title
+curl -X GET -u andrewmeehan:c5aadc41318adb01362f4ceb9ae890789a69cb26 https://api.github.com/repos/torvalds/linux/pulls/31/commits
